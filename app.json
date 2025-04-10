@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "JarsisAi",
+    "slug": "JarsisAi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Jarsis_ai_transparent.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Jarsis_ai_transparent.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM"
+      ],
+      "package": "com.yaazh.JarsisAi"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/Jarsis_ai_transparent.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5e76b3df-3ed2-47a5-92f5-2f37cdb44d91"
+      }
+    }
+  }
+}
